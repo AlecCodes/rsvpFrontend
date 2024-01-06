@@ -15,6 +15,7 @@ export function NavBar(props){
             <Link
             to = "newyork"
             >New York</Link>
+
         </nav>
     )
 }
