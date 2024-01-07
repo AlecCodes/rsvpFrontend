@@ -13,6 +13,29 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.navContainer {
+  display: flex;
+  justify-content: space-around; /* Evenly distribute the Link elements */
+  background-color: #333; /* Background color for the navbar */
+  height: 40px;
+}
+
+.navLink {
+  text-decoration: none;
+  flex : 1;
+  color: white; /* Default color for the links */
+  display: flex;
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+
+  transition: color 0.3s; /* Add transition for smooth color change */
+
+  &:hover {
+      background-color: aliceblue;
+      color: black; /* Change color on hover */
+  }
+}
+
 a {
   font-weight: 500;
   color: #646cff;
