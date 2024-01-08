@@ -20,7 +20,10 @@ function LandingPage(props){
                 Join Alec and Lauren for our wedding this summer! Since our friends and family are spread out across the country, we are having three different events in three different locations. Due to venue constraints, we ask that you only attend the location specitifed in the invitation. See the links above for the details and RSVP below!
             </p>
             
-            <Form>
+            <Form
+            action = "/create"
+            method = "post"
+            >
                 <input
                 type="text"
                 placeholder="name"
