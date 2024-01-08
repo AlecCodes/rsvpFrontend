@@ -13,6 +13,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+#titleCard{
+  color: white;
+  position: absolute;
+  font-size: 90px;
+  z-index: 1;
+}
+
+.textOverlay {
+  position: absolute;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+}
+
+.overlayText {
+  color: white;
+  font-size: 30px; /* Adjust the font size as needed */
+  font-weight: bold;
+  /* Add any additional styling you want for the text */
+}
+
+.landingText {
+  padding: 20px;
+}
+
 .navContainer {
   display: flex;
   justify-content: space-around; /* Evenly distribute the Link elements */
@@ -48,6 +75,7 @@ a:hover {
 
 .landingPhotoContainer{
   position: relative;
+  height: 100%;
 }
 
 .landingPhoto {
