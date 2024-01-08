@@ -1,6 +1,21 @@
 import { Form } from "react-router-dom"
+import { useState } from "react"
 
 function LandingPage(props){
+
+    const [nameState, setNameState ] = useState("")
+    const [isAttendingState, setIsAttendingState] = useState("")
+    const [locationState, setLocationState] = useState("")
+    const [commentsState, setCommentsState] = useState("")
+
+
+    const clearForm = async(e) => {
+        setNameState("")
+        setIsAttendingState("")
+        setLocationState("")
+        setCommentsState("")
+    }
+
     return(
         <>
             <div>
@@ -23,22 +38,30 @@ function LandingPage(props){
             <Form
             action = "/create"
             method = "post"
+            onSubmit={clearForm}
             >
                 <input
                 type="text"
                 placeholder="name"
                 name="name"
+                value={nameState}
+                onChange={(e) => setNameState(e.target.value)}
                 />
 
                 <label>Can you make it?</label>
                 <input
                 name="isAttending" 
-                type="checkbox"/>
+                type="checkbox"
+                value = {isAttendingState}
+                onChange={(e) => setIsAttendingState(e.target.value)}
+                />
                 
 
                 <label>Which city were you invited to?</label>
                 <input list="cities"
                 name = "location"
+                value = {locationState}
+                onChange = {(e) => setLocationState(e.target.value)}
                 />
                 <datalist id = "cities">
                     <option value = "Seattle"></option>
@@ -50,6 +73,8 @@ function LandingPage(props){
                 type="textarea"
                 placeholder="Dietary Restrictions, Questions, etc.."
                 name="comments"
+                value = {commentsState}
+                onChange={(e) => setCommentsState(e.target.value)}
                 />
 
                 <input type="submit"></input>
