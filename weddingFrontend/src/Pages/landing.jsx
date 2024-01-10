@@ -47,27 +47,29 @@ function LandingPage(props){
                 value={nameState}
                 onChange={(e) => setNameState(e.target.value)}
                 />
+                <div>
+                    <label>Can you make it?</label>
+                    <input
+                    name="isAttending" 
+                    type="checkbox"
+                    value = {isAttendingState}
+                    onChange={(e) => setIsAttendingState(e.target.value)}
+                    />
+                </div>
 
-                <label>Can you make it?</label>
-                <input
-                name="isAttending" 
-                type="checkbox"
-                value = {isAttendingState}
-                onChange={(e) => setIsAttendingState(e.target.value)}
-                />
-                
-
-                <label>Which city were you invited to?</label>
-                <input list="cities"
-                name = "location"
-                value = {locationState}
-                onChange = {(e) => setLocationState(e.target.value)}
-                />
-                <datalist id = "cities">
-                    <option value = "Seattle"></option>
-                    <option value = "San Diego"></option>
-                    <option value = "New York"></option>
-                </datalist>
+                <div>
+                    <label>Which city were you invited to?</label>
+                    <input list="cities"
+                    name = "location"
+                    value = {locationState}
+                    onChange = {(e) => setLocationState(e.target.value)}
+                    />
+                    <datalist id = "cities">
+                        <option value = "Seattle"></option>
+                        <option value = "San Diego"></option>
+                        <option value = "New York"></option>
+                    </datalist>
+                </div>
 
                 <textarea
                 type="textarea"
