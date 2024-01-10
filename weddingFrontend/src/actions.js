@@ -1,6 +1,6 @@
 import { redirect } from "react-router-dom"
 
-const URL = 'https://rsvpbackend.onrender.com/'
+const URL = 'https://wedding-rsvp-6d731ff6db69.herokuapp.com/'
 
 export const createAction = async ({request}) => {
     const formData = await request.formData()

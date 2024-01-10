@@ -5,6 +5,7 @@ function LandingPage(props){
 
     const [nameState, setNameState ] = useState("")
     const [isAttendingState, setIsAttendingState] = useState("")
+    const [notAttendingState, setNotAttendingState] = useState("")
     const [locationState, setLocationState] = useState("")
     const [commentsState, setCommentsState] = useState("")
 
@@ -47,22 +48,39 @@ function LandingPage(props){
                 value={nameState}
                 onChange={(e) => setNameState(e.target.value)}
                 />
-                <div>
-                    <label>Can you make it?</label>
-                    <input
-                    name="isAttending" 
-                    type="checkbox"
-                    value = {isAttendingState}
-                    onChange={(e) => setIsAttendingState(e.target.value)}
-                    />
+                <label>Can you make it?</label>
+
+                <div className="checkboxContainer">
+                    <div>
+                        <label>Yes</label><input
+                        name="isAttending" 
+                        type="checkbox"
+                        checked = {isAttendingState}
+                        onChange={(e) => {
+                            setIsAttendingState(e.target.checked)
+                            setNotAttendingState("")
+                        }}
+                        />
+                    </div>
+                    <div>
+                        <label>No</label>
+                        <input
+                        type="checkbox"
+                        checked = {notAttendingState}
+                        onChange={(e) => {
+                            setNotAttendingState(e.target.checked)
+                            setIsAttendingState("")
+                        }}
+                        ></input>
+                    </div>
                 </div>
 
                 <div>
                     <label>Which city were you invited to?</label>
                     <input list="cities"
                     name = "location"
-                    value = {locationState}
-                    onChange = {(e) => setLocationState(e.target.value)}
+                    checked = {locationState}
+                    onChange = {(e) => setLocationState(e.target.checked)}
                     />
                     <datalist id = "cities">
                         <option value = "Seattle"></option>
