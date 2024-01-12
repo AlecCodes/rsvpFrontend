@@ -41,9 +41,10 @@ function LandingPage(props){
             method = "post"
             onSubmit={clearForm}
             >
+                <label>Name:</label>
                 <input
                 type="text"
-                placeholder="name"
+                placeholder=""
                 name="name"
                 value={nameState}
                 onChange={(e) => setNameState(e.target.value)}
@@ -89,9 +90,9 @@ function LandingPage(props){
                     </datalist>
                 </div>
 
+                <label>Dietary Restrictions, Questions, etc..?</label>
                 <textarea
                 type="textarea"
-                placeholder="Dietary Restrictions, Questions, etc.."
                 name="comments"
                 value = {commentsState}
                 onChange={(e) => setCommentsState(e.target.value)}

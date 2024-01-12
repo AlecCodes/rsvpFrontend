@@ -27,7 +27,7 @@ Form {
 
 input,
 textarea {
-  width: 80%;
+  width: 60%;
   margin-bottom: 15px;
   border: 1px solid #ccc;
   border-radius: 4px;
