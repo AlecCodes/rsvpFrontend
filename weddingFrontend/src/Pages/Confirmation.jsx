@@ -13,8 +13,8 @@ function Confirmation(props){
 
     return(
         <div>
-            <p>Congratulations {names.name}! RSVP Successfull</p>
-            <p>Redirect in {timerState}</p>
+            <p>Congratulations {names.name}! RSVP Successfull!</p>
+            <p>Returning home in {timerState}</p>
         </div>
     )
 }
