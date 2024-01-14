@@ -20,5 +20,8 @@ export const createAction = async ({request}) => {
         body : JSON.stringify(newRsvp)
     })
     console.log(newRsvp)
-    return redirect("/")
+    
+
+    return redirect(`/confirmation/${formData.get("name")}`)
+
 }

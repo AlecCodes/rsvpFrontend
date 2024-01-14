@@ -13,6 +13,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+hr{
+  width: 50%;
+}
+
+.detail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#icon{
+  width: 30px;
+  background-color: #f9f9f9;
+}
+
+#location , #date{
+  font-size: 30px;
+}
+
 Form {
   background-color: #fff;
   border-radius: 8px;
