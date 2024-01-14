@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom"
+
 function Seattle(props){
     return(
         <div className="fade-in">  
@@ -12,6 +14,8 @@ function Seattle(props){
             <hr/>
             <img 
             src="https://images.vexels.com/media/users/3/132032/isolated/lists/7a2a531a5e0c67179de908d388702c63-save-the-date-typography-2.png" alt="SD image"></img>
+            <hr/>
+            <Link to = "/">Back</Link>
         </div>
     )
 }

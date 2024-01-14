@@ -19,7 +19,7 @@ function LandingPage(props){
 
     return(
         <>
-            <div>
+            <div className="fade-in">
                 <div className="landingPhotoContainer">
                     <img 
                     className="landingPhoto" 
