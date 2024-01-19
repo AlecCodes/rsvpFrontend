@@ -32,11 +32,13 @@ hr{
 
 .detail{
   display: flex;
+
   justify-content: center;
   align-items: center;
 }
 
 #icon{
+  padding-right: 1%;
   width: 30px;
   background-color: #f9f9f9;
 }
@@ -226,8 +228,13 @@ button:focus-visible {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    color: #ff00f2; /* Adjust text color for dark mode */
+    color: white; /* Adjust text color for dark mode */
     background-color: #121212; /* Adjust background color for dark mode */
+  }
+
+  #icon{
+    filter: invert(1);
+    background: rgba(255, 255, 255, 0);
   }
 
   /* Adjust other styles for dark mode */
@@ -244,6 +251,10 @@ button:focus-visible {
 
 /* Media query for larger screens */
 @media only screen and (min-width: 768px) {
+
+  #break{
+    display: none;
+  }
 
   form {
     max-width: 600px; /* Adjust this value based on your design preferences */

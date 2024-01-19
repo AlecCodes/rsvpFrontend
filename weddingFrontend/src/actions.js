@@ -6,7 +6,6 @@ export const createAction = async ({request}) => {
     const formData = await request.formData()
     const newRsvp = {
         name : formData.get("name"),
-        //WILL THIS WORK???? DOES CHECKBOX RETURN A BOOL
         isAttending : formData.get("isAttending") === "on" ? true : false,
         location : formData.get("location"),
         comments :  formData.get("comments")
