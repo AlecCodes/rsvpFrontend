@@ -232,6 +232,10 @@ button:focus-visible {
     background-color: #121212; /* Adjust background color for dark mode */
   }
 
+  form{
+    color: black;
+  }
+
   #icon{
     filter: invert(1);
     background: rgba(255, 255, 255, 0);
@@ -251,6 +255,10 @@ button:focus-visible {
 
 /* Media query for larger screens */
 @media only screen and (min-width: 768px) {
+ 
+  #location{
+    width: 100%;
+  }
 
   #break{
     display: none;
