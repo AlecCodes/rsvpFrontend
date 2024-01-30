@@ -15,7 +15,7 @@ function SanDiego(props){
             </div>
             <div className="detail">
                 <img id='icon' src="https://static-00.iconduck.com/assets.00/calendar-small-icon-931x1024-onc7jpcy.png"/>
-                <p id='date'>July 8th, 2024</p>
+                <p id='date'>June 8th, 2024 3PM</p>
             </div>
             <hr/>
             <img

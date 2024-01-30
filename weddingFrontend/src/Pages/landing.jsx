@@ -23,7 +23,7 @@ function LandingPage(props){
                 <div className="landingPhotoContainer">
                     <img 
                     className="landingPhoto" 
-                    src="https://assets.vogue.in/photos/6360ee4b74016d3adc45f105/1:1/w_4534,h_4534,c_limit/JR.WP-244.jpg"/>
+                    src="https://i.imgur.com/tCTIL8n.jpg"/>
                     <div className="darkOverlay"></div>
                     <div className="textOverlay">
                         <p className="overlayText">We're getting married!</p>
