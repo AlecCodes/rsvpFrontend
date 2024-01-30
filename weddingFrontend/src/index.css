@@ -13,9 +13,7 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.fade-in {
-  animation: fade-in 2s;
-}
+
 
 @keyframes fade-in {
   from {
@@ -155,14 +153,22 @@ a:hover {
 }
 
 
+.fade-in {
+  animation: fade-in 2s;
+}
+
 .landingPhotoContainer{
+  width: 100%;
   position: relative;
-  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .landingPhoto {
   width: 100%;
   height: auto;
+  
 }
 
 .darkOverlay{
@@ -255,7 +261,17 @@ button:focus-visible {
 
 /* Media query for larger screens */
 @media only screen and (min-width: 768px) {
- 
+
+  .fade-in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .landingPhotoContainer{
+    width: 80%;
+  }
+
   #location{
     width: 100%;
   }
