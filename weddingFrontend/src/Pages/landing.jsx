@@ -19,7 +19,7 @@ function LandingPage(props){
 
     return(
         <>
-            <div className="fade-in">
+            <div className="fade-in" id="landing">
                 <div className="landingPhotoContainer">
                     <img 
                     className="landingPhoto" 
@@ -30,12 +30,13 @@ function LandingPage(props){
                     </div>
                 </div>
             </div>
-            <p
-            className="landingText"
-            >
-                Join Alec and Lauren for our wedding this summer! Since our friends and family are spread out across the country, we are having three different events in three different locations. Due to venue constraints, we ask that you only attend the location specitifed in the invitation. See the links above for the details and RSVP below!
-            </p>
-            
+            <div className="landingTextContainer">
+                <p
+                className="landingText"
+                >
+                    Join Alec and Lauren for our wedding this summer! Since our friends and family are spread out across the country, we are having three different events in three different locations. Due to venue constraints, we ask that you only attend the location specified in the invitation. See the links above for the details and RSVP below!
+                </p>
+            </div>            
             <Form
             action = "/create"
             method = "post"

@@ -2,6 +2,7 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-family: Calibri;
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -11,6 +12,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
 }
 
 
@@ -262,15 +264,25 @@ button:focus-visible {
 /* Media query for larger screens */
 @media only screen and (min-width: 768px) {
 
-  .fade-in{
+  #landing{
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .landingPhotoContainer{
-    width: 80%;
+  .landingText{
+    font-size: 29px;
   }
+
+  .landingTextContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .landingPhotoContainer{
+    width: 70%;
+  }
+
 
   #location{
     width: 100%;
