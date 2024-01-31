@@ -72,10 +72,6 @@ label {
   margin-bottom: 8px;
 }
 
-div {
-  margin-bottom: 15px;
-}
-
 input[type="checkbox"] {
   margin-right: 5px;
 }
@@ -268,6 +264,7 @@ button:focus-visible {
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
 
   .landingText{
@@ -275,12 +272,13 @@ button:focus-visible {
   }
 
   .landingTextContainer{
+    margin-top: -2%;
     margin-left: 10%;
     margin-right: 10%;
   }
 
   .landingPhotoContainer{
-    width: 70%;
+    width: 60%;
   }
 
 
